@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/message_text"
+        android:orderInCategory="1"
+        android:title="@string/nav_menu_notification_title" />
+
+    <item
+        android:icon="@drawable/magnify"
+        android:orderInCategory="1"
+        android:title="@string/search_title" />
+
+</menu>
