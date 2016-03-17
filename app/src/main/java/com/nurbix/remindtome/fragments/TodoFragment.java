@@ -1,5 +1,6 @@
 package com.nurbix.remindtome.fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -9,17 +10,22 @@ import android.view.ViewGroup;
 
 import com.nurbix.remindtome.R;
 
-public class ExampleFragment extends Fragment {
-    private static final int LAYOUT = R.layout.fragment_example;
-    private View view;
+public class TodoFragment extends AbstractTabFragment {
 
-    public static ExampleFragment getInstance(){
+    private static final int LAYOUT = R.layout.fragment_example;
+
+
+    public static TodoFragment getInstance(Context context){
+
         Bundle args = new Bundle();
-        ExampleFragment fragment = new ExampleFragment();
+        TodoFragment fragment = new TodoFragment();
         fragment.setArguments(args);
+        fragment.setContext(context);
+        fragment.setTitle(context.getString(R.string.tab_todo_title));
 
         return fragment;
     }
+
 
     @Nullable
     @Override
