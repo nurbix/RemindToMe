@@ -2,4 +2,6 @@
     <string name="app_name">RemindToMe Beta</string>
     <string name="search_title">search</string>
     <string name="nav_menu_notification_title">Notification</string>
+    <string name="view_nav_open">Open</string>
+    <string name="view_nav_close">Close</string>
 </resources>
